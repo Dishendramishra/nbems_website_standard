@@ -14,11 +14,13 @@
 
     <div class="d-flex flex-column h-100">
         <!------------------------------------ Header ------------------------------------------------->
-        <div class="d-flex justify-content-between align-items-center px-4 py-3 text-white"
+        <div class="container-fluid d-flex align-items-center px-1 py-2 text-white"
             style="background-color: #31577c;" id="header">
-            <div class="d-flex justify-content-start">
-                <img src="static/logo.png" width="86px" height="86px" class="mx-4" alt="natboard logo">
-                <div>
+            <div class="col-1 d-flex justify-content-start mx-2">
+                <img src="static/logo.png" class="img-fluid" alt="natboard logo">
+            </div>
+            <div class="col-8 col-md-9 d-flex flex-column justify-content-start">
+                <div class="d-none d-md-block">
                     <h4 style="margin:0px;padding:0px;">आयुर्विज्ञान में राष्ट्रीय परीक्षा बोर्ड</h4>
                     <h6 style="margin-bottom:2px;padding:0px;font-weight: normal;"> (स्वास्थ्य एवं परिवार कल्याण
                         मंत्रालय,
@@ -29,8 +31,13 @@
                         Health and Family Welfare, Government of India)</h6>
                     <!-- <h6 style="margin-bottom:1px;padding:0px;font-weight: normal;">(आईएसओ 9001:2015 प्रमाणित संगठन An ISO 9001:2015 Certified Organisation)</h6> -->
                 </div>
+                <div class="d-md-none">
+                    <h6 style="margin-bottom:1px;padding:0px;">National Board of Examinations in Medical Sciences</h6>
+                </div>
             </div>
-            <img src="static/amrit_mahotsav.png" width="120px" alt="">
+            <div class="col-1 col-md-1 d-flex justify-content-start mx-2 ms-auto">
+                <img src="static/amrit_mahotsav.png" class="img-fluid" alt="">
+            </div>
         </div>
         <!--------------------------------------------------------------------------------------------->
 
@@ -40,9 +47,10 @@
 
 
         <!------------------------------------ Footer ------------------------------------------------->
-        <div class="d-flex justify-content-center align-items-center px-4 py-2 text-white"
+        <div class="d-flex justify-content-center align-items-center px-2 py-2 text-white"
             style="background-color: #31577c;">
-            <p>&copy; Copyright National Board of Examinations in Medical Sciences, New Delhi, <span id="year"></span></p>
+            <h6>&copy; National Board of Examinations in Medical Sciences, New Delhi, <span id="year"></span>
+            </h6>
         </div>
         <!--------------------------------------------------------------------------------------------->
 
@@ -52,8 +60,8 @@
     </script>
 </body>
 
-    <script>
-        document.getElementById("year").innerText = new Date().getFullYear();
-    </script>
+<script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+</script>
 
 </html>
